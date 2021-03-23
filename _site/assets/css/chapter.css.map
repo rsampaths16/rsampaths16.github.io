@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "chapter.css",
+	"sources": [
+		"chapter.sass",
+		"_sass/_base.sass"
+	],
+	"sourcesContent": [
+		"@import 'base';\n\n.chapter {\n    &__title {\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        min-height: 100vh;\n        font: {\n            family: $main-font;\n            size: 32px; } }\n\n    &__content:first-child {\n        padding: {\n            top: 10%; } }\n\n    &__content:last-child {\n        padding: {\n            bottom: 10%; } } }\n\n@media (min-width: $responsive-width) {\n    .chapter .chapter__title {\n        position: relative; }\n\n    .chapter .chapter__title.chapter__title--fixed {\n        position: fixed; }\n\n    .chapter .chapter__content {\n        position: relative;\n        min-height: 100vh; }\n\n    .chapter__title {\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        font-size: 72px; } }\n\n.about, .projects, .achievements {\n    &.chapter .chapter {\n        &__title {\n            background-color: $chapter-title-color-a; }\n        &__content {\n            background-color: $chapter-content-color-a; } } }\n\n.experience, .technical-skills {\n    &.chapter .chapter {\n        &__title {\n            background-color: $chapter-title-color-b; }\n        &__content {\n            background-color: $chapter-content-color-b; } } }\n",
+		"$main-font: 'Caveat', cursive;\n$quotation-title-font: 'Averia Serif Libre', cursive;\n$quotation-content-font: 'Grandstander', cursive;\n\n$primary-color: #d44500;\n$secondary-color: #55433b;\n\n$chapter-title-color-a: #6da2ff;\n$chapter-content-color-a: #fff5ec;\n\n$chapter-title-color-b: #bda79e;\n$chapter-content-color-b: #dcd6c6;\n\n$responsive-width: 48em;\n"
+	],
+	"names": [],
+	"mappings": "AAEA,AACI,eADI,AACK,CACL,OAAO,CAAE,IAAI,CACb,WAAW,CAAE,MAAM,CACnB,eAAe,CAAE,MAAM,CACvB,UAAU,CAAE,KAAK,CAEb,WAAM,CCTN,QAAQ,CAAE,OAAO,CDUjB,SAAI,CAAE,IAAI,CAAK,AAR3B,AAUI,iBAVI,CAUO,WAAW,AAAC,CAEf,WAAG,CAAE,GAAG,CAAK,AAZzB,AAcI,iBAdI,CAcO,UAAU,AAAC,CAEd,cAAM,CAAE,GAAG,CAAK,AAE5B,MAAM,kBACF,CAAA,AAAA,QAAQ,CAAC,eAAe,AAAC,CACrB,QAAQ,CAAE,QAAQ,CAAG,AAEzB,AAAA,QAAQ,CAAC,eAAe,AAAA,sBAAsB,AAAC,CAC3C,QAAQ,CAAE,KAAK,CAAG,AAEtB,AAAA,QAAQ,CAAC,iBAAiB,AAAC,CACvB,QAAQ,CAAE,QAAQ,CAClB,UAAU,CAAE,KAAK,CAAG,AAExB,AAAA,eAAe,AAAC,CACZ,OAAO,CAAE,IAAI,CACb,WAAW,CAAE,MAAM,CACnB,eAAe,CAAE,MAAM,CACvB,SAAS,CAAE,IAAI,CAAG,CAbG,AAe7B,AAEQ,MAFF,AACD,QAAQ,CAAC,eAAQ,CADd,SAAS,AACZ,QAAQ,CAAC,eAAQ,CADH,aAAa,AAC3B,QAAQ,CAAC,eAAQ,AACL,CACL,gBAAgB,CCjCJ,OAAO,CDiCwB,AAHvD,AAIQ,MAJF,AACD,QAAQ,CAAC,iBAAQ,CADd,SAAS,AACZ,QAAQ,CAAC,iBAAQ,CADH,aAAa,AAC3B,QAAQ,CAAC,iBAAQ,AAGH,CACP,gBAAgB,CClCF,OAAO,CDkCwB,AAEzD,AAEQ,WAFG,AACN,QAAQ,CAAC,eAAQ,CADT,iBAAiB,AACzB,QAAQ,CAAC,eAAQ,AACL,CACL,gBAAgB,CCrCJ,OAAO,CDqCwB,AAHvD,AAIQ,WAJG,AACN,QAAQ,CAAC,iBAAQ,CADT,iBAAiB,AACzB,QAAQ,CAAC,iBAAQ,AAGH,CACP,gBAAgB,CCtCF,OAAO,CDsCwB"
+}
